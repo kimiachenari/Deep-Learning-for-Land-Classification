@@ -1,12 +1,12 @@
 # Deep-Learning-for-Land-Classification
 # Deep Learning Model for Land Classification
 
-Welcome to the **Deep Learning Model for Land Classification** repository! This project leverages deep learning techniques to classify land cover types using Landsat satellite imagery and various environmental indices. It demonstrates a powerful workflow for processing remote sensing data and applying a Convolutional Neural Network (CNN) to classify land types into multiple categories.
+This project leverages deep learning techniques to classify land cover types using Landsat satellite imagery and various environmental indices. It demonstrates a powerful workflow for processing remote sensing data and applying a Convolutional Neural Network (CNN) to classify land types into multiple categories.
 
 If you're passionate about remote sensing, satellite imagery, and machine learning, you're in the right place! Let's dive in and learn how we can use cutting-edge AI to understand our planet better.
 
 ## 🚀 Features
-
+- **Creating and Downloading the satellite imagery and data from GEE**: Create satellite imagery in Google Earth Engine platform amd then Download the data and images.
 - **Data Preprocessing**: Import and process satellite imagery using `rasterio` and EarthPy.
 - **Feature Engineering**: Use various environmental indices (e.g., NDVI, NDWI) alongside satellite bands for better classification performance.
 - **Deep Learning Model**: Train a Convolutional Neural Network (CNN) to classify land cover into multiple categories.
@@ -30,8 +30,8 @@ pip install matplotlib
 
 ```
 ├── deep_learning.ipynb           # Main notebook with code implementation
-├── Landsat_Jambi_2023.tif        # Example Landsat satellite image for classification
-├── Samples_LC_Jambi_2023.csv     # Sample CSV file containing land cover labels and features
+├── Landsat_Mashhad_2023.tif        # Example Landsat satellite image for classification
+├── Samples_LandCover_Mashhad_2023.csv     # Sample CSV file containing land cover labels and features
 └── README.md                     # This file
 ```
 
@@ -56,8 +56,8 @@ drive.mount('/content/drive')
 The Landsat satellite image and sample CSV file containing land cover labels and features are loaded from Google Drive.
 
 ```python
-image = rasterio.open('/content/drive/MyDrive/DL/Landsat_Jambi_2023.tif')
-samples = pd.read_csv('/content/drive/MyDrive/DL/Samples_LC_Jambi_2023.csv')
+image = rasterio.open('/content/drive/MyDrive/DL/Landsat_Mashhad_2023.tif')
+samples = pd.read_csv('/content/drive/MyDrive/DL/Samples_LandCover_Mashhad_2023.csv')
 ```
 
 ### 4. **Preprocess the Data**
@@ -125,8 +125,12 @@ new_dataset.close()
 
 Here’s a sample of what you can expect:
 
+![2023dl_img](https://github.com/user-attachments/assets/f5cf4902-7196-4216-82b6-f11a150b2a75)
+
+![2023dl](https://github.com/user-attachments/assets/e360a038-7ba4-4562-8e86-f078b33c30f8)
+
 - **Original Satellite Image:**
-  ![Satellite Image](Jambi_2023.jpg)
+  ![Satellite Image](Mashhad_2023.jpg)
 
 - **Predicted Land Cover Classes:**
   Visualize the classification results with the predicted land cover types on the map.
@@ -156,4 +160,4 @@ Let’s make the world more intelligent and sustainable—one pixel at a time. �
 
 ---
 
-We hope you enjoy this project. Happy coding! 🎉
+I hope you enjoy this project. Happy coding! 🎉
