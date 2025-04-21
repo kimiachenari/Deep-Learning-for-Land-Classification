@@ -1,4 +1,4 @@
-# Deep-Learning-for-Land-Classification
+
 # Deep Learning Model for Land Classification
 
 This project leverages deep learning techniques to classify land cover types using Landsat satellite imagery and various environmental indices. It demonstrates a powerful workflow for processing remote sensing data and applying a Convolutional Neural Network (CNN) to classify land types into multiple categories.
