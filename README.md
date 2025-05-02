@@ -3,7 +3,6 @@
 
 This project leverages deep learning techniques to classify land cover types using Landsat satellite imagery and various environmental indices. It demonstrates a powerful workflow for processing remote sensing data and applying a Convolutional Neural Network (CNN) to classify land types into multiple categories.
 
-If you're passionate about remote sensing, satellite imagery, and machine learning, you're in the right place! Let's dive in and learn how we can use cutting-edge AI to understand our planet better.
 
 ## 🚀 Features
 - **Creating and Downloading the satellite imagery and data from GEE**: Create satellite imagery in Google Earth Engine platform amd then Download the data and images.
